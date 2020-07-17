@@ -14,7 +14,7 @@ else
 	end
 end
 
-#Vérification de la récupération de l'URL
+
  puts page_acquired?(page)
 
 def get_names(page)
@@ -29,7 +29,6 @@ end
 
 names = get_names(page)
 
-#Récupération des noms des monnaies
 def get_prices(page)
     all_prices = page.xpath('/html/body/div[1]/div[1]/div[2]/div[1]/div[2]/div/div[2]/div[3]/div/table/tbody/tr/td[5]/a')
 
@@ -40,9 +39,9 @@ def get_prices(page)
     return prices_list
 end
 
-#Création d'un tableau de Hash
+
 prices = get_prices(page)
-#print prices
+
 
 final_list = Hash.new
     names.zip(prices){|k,v|final_list[k] = v}

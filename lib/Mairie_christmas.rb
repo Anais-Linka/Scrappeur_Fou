@@ -22,7 +22,6 @@ def get_townhall_urls
     return town_urls
 end 
 
-#Récupération des Emails
 
  def get_townhall_names
     page = Nokogiri::HTML(open("https://www.annuaire-des-mairies.com/val-d-oise.html"))
@@ -35,7 +34,6 @@ end
     return town_names
 end 
 
-#Création d'un tableau de Hash 
 
 def perform
     

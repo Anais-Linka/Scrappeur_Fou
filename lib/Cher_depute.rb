@@ -21,7 +21,6 @@ def get_first_name(page)
   return array_of_first_names
 end
 
-#recuperation liste des Emails
 def get_last_name(page)
   array_of_last_names = []
   number_of_deputes = page.css('div#deputes-list div ul a').length
@@ -61,5 +60,3 @@ def final_array_of_hashes(array_of_urls, page)
 end
 
 final_array_of_hashes(get_depute_urls(page), page)
-
-#Création d'un tableau de Hash
