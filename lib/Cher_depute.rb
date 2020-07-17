@@ -59,4 +59,4 @@ def final_array_of_hashes(array_of_urls, page)
   p final_array
 end
 
-final_array_of_hashes(get_depute_urls(page), page)
+final_array_of_hashes(get_depute_urls(page),page)
